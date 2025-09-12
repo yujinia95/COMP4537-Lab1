@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lab01_writer</title>
+  <title id="writer_html_title"></title>
 
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="./css/style.css">
@@ -16,21 +16,35 @@
 <body>
 
   <!--! Display the most recent time at which the note were saved from localStorage -->
-  <div class="time-style"> TIME! </div>
+  <div id="time" class="time-style"> TIME! </div>
 
-  <h1 class="h1-writer-style">Now you are in writer.html</h1>
+  <h1 id="writer_html_h1" class="h1-style"></h1>
 
-  <!-- Text area for writing notes -->
-  <div class="notes-container">
-    <textarea id="note-post-id" name="note" rows="5" cols="35">
+
+  <div class="notes-button-container">
+
+    <div class="notes-list">
+
+      <!--! MAKE SURE DELETE HARD CODED -->
+      <!-- Text area for writing notes -->
+      <textarea id="note-post-id" class="txt-area" name="note" rows="5" cols="35">
         Content from localStorage
-    </textarea>
+      </textarea>
+
+      <!-- Remove button -->
+      <button type="button" id="writer_remove_btn" class="btn btn-outline-danger"></button>
+    </div>
+
+    <!-- Add button -->
+    <button type="button" id="writer_add_btn" class="btn btn-outline-primary add-btn"></button>
+
+    <!-- Back button to index.html -->
+    <button type="button" id="back_button" class="btn btn-outline-info back-btn" onClick="location.href='index.html'"></button>
   </div>
 
-
-  <button type="button" class="btn btn-outline-danger">Remove</button>
-
-  <button type="button" class="btn btn-outline-primary">Add</button>
+  <!-- JavaScript files -->
+  <script src="./lang/messages/en/user.js"></script>
+  <script src="./js/uiMessage.js"></script>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
