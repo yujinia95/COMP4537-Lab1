@@ -76,6 +76,7 @@ class UImessage {
         this.setTexts(userMsgs);
     }
 
+    // Set texts for the elements/
     setTexts(userMsgs = {}) {
         for (const key of Object.keys(UImessage.elementIds)) {
             const element = this[key.toLowerCase()];
