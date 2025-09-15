@@ -1,6 +1,7 @@
 /**
  * @file js/writer.js
  * @author Yujin Jeong
+ * @author Chat GPT & Claude
  * @version 1.0
  * @description This file contains the Writer class that manages notes creation, deletion, auto-saving, and synchronization across tabs.
  */

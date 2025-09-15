@@ -1,6 +1,7 @@
 /**
  * @file js/reader.js
  * @author Yujin Jeong
+ * @author Chat GPT & Claude
  * @version 1.0
  * @description This file contains the Reader class that represents the note reader.
  */

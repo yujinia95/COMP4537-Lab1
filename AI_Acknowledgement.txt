@@ -1,0 +1,1 @@
+AI Acknowledgement: I used ChatGPT-5 (https://chatgpt.com/) and Claude Sonnet 4 (https://claude.ai/new) to suggest class properties and methods, and debug my code.
