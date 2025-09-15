@@ -47,7 +47,7 @@ class Note {
         // dataset.noteId -> Convert noteId to kebab-case for HTML data attribute like 'data-note-id'
         this.noteContainer                = document.createElement(DIV_ELEMENT);
         this.noteContainer.dataset.noteId = this.noteId;
-        this.noteContainer.className      = NOTE_CONTAINER;
+        this.noteContainer.className      = NOTE_CONTAINER_CLASS;
 
         // Text area for note content.
         this.txtArea          = document.createElement(TXTAREA.ELEMENT);
