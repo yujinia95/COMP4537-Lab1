@@ -26,17 +26,17 @@
     margin-left: auto;
     margin-right: 30px;
     right: 20px;
-    max-width: 5%;
+    max-width: 8%;
 }
 
-.notes-button-container {
+.writer-elements-container, .reader-elements-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
 
-.notes-list {
+.note-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -54,4 +54,9 @@
 .back-btn {
     align-items: center;
     margin-top: 200px;
+}
+
+.card {
+    width: 18rem;
+    margin: 20px;
 }

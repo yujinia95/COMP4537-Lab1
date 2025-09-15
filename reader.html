@@ -16,27 +16,24 @@
 
 <body>
 
-  <!--! Display the most recent time at which the note were saved from localStorage -->
-  <div id="time" class="time-style"> TIME! </div>
+  <div id="updated-at" class="time-style"></div>
 
     <h1 id="reader_html_h1" class="h1-style"></h1>
 
-  <div class="notes-button-container">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <!--! MAKE SURE DELETE HARD CODED -->
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-      </div>
-    </div>
+  <div class="reader-elements-container">
 
-    <!-- Back button to index.html -->
+    <div id="notes-list-reader"></div>
+
     <button type="button" id="back_button" class="btn btn-outline-info back-btn" onClick="location.href='index.html'"></button>
 
   </div>
 
-    <!-- JavaScript files -->
-    <script src="./lang/messages/en/user.js"></script>
-    <script src="./js/uiMessage.js"></script>
+  <!-- JavaScript files -->
+  <script src="./lang/messages/en/user.js"></script>
+  <script src="./js/constants.js"></script>
+  <script src="./js/uiMessage.js"></script>
+  <script src="./js/note.js"></script>
+  <script src="./js/reader.js"></script>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

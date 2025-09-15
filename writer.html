@@ -15,25 +15,14 @@
 
 <body>
 
-  <!--! Display the most recent time at which the note were saved from localStorage -->
-  <div id="time" class="time-style"> TIME! </div>
+  <div id="last-saved-time" class="time-style"></div>
 
   <h1 id="writer_html_h1" class="h1-style"></h1>
 
 
-  <div class="notes-button-container">
+  <div class="writer-elements-container">
 
-    <div class="notes-list">
-
-      <!--! MAKE SURE DELETE HARD CODED -->
-      <!-- Text area for writing notes -->
-      <textarea id="note-post-id" class="txt-area" name="note" rows="5" cols="35">
-        Content from localStorage
-      </textarea>
-
-      <!-- Remove button -->
-      <button type="button" id="writer_remove_btn" class="btn btn-outline-danger"></button>
-    </div>
+    <div id="notes-list"></div>
 
     <!-- Add button -->
     <button type="button" id="writer_add_btn" class="btn btn-outline-primary add-btn"></button>
@@ -44,7 +33,10 @@
 
   <!-- JavaScript files -->
   <script src="./lang/messages/en/user.js"></script>
+  <script src="./js/constants.js"></script>
   <script src="./js/uiMessage.js"></script>
+  <script src="./js/note.js"></script>
+  <script src="./js/writer.js"></script>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
